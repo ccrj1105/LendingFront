@@ -1,0 +1,100 @@
+{
+  "id": "b13ea34f-9af2-49f5-9b74-49930be61469",
+  "version": "2.0",
+  "name": "LendingFront",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "81dcabdf-4267-4ad2-8419-e1b9f649fc4d",
+    "name": "LendinFront",
+    "commands": [{
+      "id": "b4c68a04-bf04-4284-9172-9f311c54067a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9847ccd-0c04-4693-a902-1437f52b3888",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b41ca0c-dc8e-44c1-ac84-3e19fe8aeb59",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "lendingfront"
+    }, {
+      "id": "bcce1642-350f-474a-ae84-29ea77977faa",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2124915c-e5a3-4597-90d1-34dbfa77de27",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(3) > .tF2Cxc .LC20lb",
+      "targets": [
+        ["css=div:nth-child(3) > .tF2Cxc .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'LendingFront | Powerful Small Business Lending Technology ...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4b91448-13f0-441d-b6d5-2797dc350dd0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Company",
+      "targets": [
+        ["linkText=Company", "linkText"],
+        ["css=#menu-item-383 > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Company')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-383']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lendingfront.com/company/')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Company')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d31d196-ca8a-41ef-98a0-bcec7e6ffe0b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,106)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e57143f4-60c1-47e6-afbf-769ed6923894",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,530)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "61d5afff-73a9-4910-85dc-1b4ec29566f1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
